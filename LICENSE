@@ -1,12 +1,28 @@
 Copyright (c) 2024 Gabriel
 
-This code is provided for academic and personal use only.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+modify, and distribute the Software for personal, academic, and non-commercial use only,
+subject to the following conditions:
 
-Commercial use of any kind is strictly prohibited, including but not limited to:
-- Use in proprietary/commercial products or services
-- Use in commercial research or development
-- Redistribution with or without modification for commercial benefit
+1. The Software may **not** be used, copied, modified, or distributed **for any commercial purpose**.
+2. Commercial purposes include but are not limited to:
+   - Selling or reselling the Software
+   - Using the Software in a paid service, product, or platform
+   - Embedding or redistributing the Software within commercial offerings
+3. Modifications are allowed, but the resulting derivative works must **also comply with this license**.
+4. Proper attribution must be given to the original author.
 
-Unauthorized use will be considered a violation of copyright law.
+Any violation of these terms will be considered a breach of copyright.
 
-For commercial licensing inquiries, contact: your@email.com
+For commercial licensing inquiries, please contact: your@email.com
+
+---
+
+本项目授权仅用于学习、研究、非商业目的。
+禁止任何形式的商业使用，包括但不限于以下行为：
+- 将代码用于商业产品或收费平台；
+- 修改后用于商业用途；
+- 再次分发并牟利。
+
+如需商业授权，请联系作者。
