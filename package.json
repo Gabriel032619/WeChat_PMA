@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cloudbase/wx-cloud-client-sdk": "^1.0.0",
+    "weapp-qrcode": "^1.0.0"
+  }
+}

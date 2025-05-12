@@ -1,0 +1,39 @@
+.page_container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form_item input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

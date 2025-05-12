@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='outer-border'>
+    <view class='inner-border'>
+      <canvas canvas-id="qrcode" style="width: 200px; height: 200px;" class="qrcode-canvas"></canvas>
+    </view>
+  </view>
+
+  <view class="time-container">
+    <text class="time">{{currentTime}}</text>
+  </view>
+</view>

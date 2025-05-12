@@ -1,0 +1,59 @@
+<view class="page_container">
+  <view class="top_bg">
+    <image class="manager_btn" src="{{images.manager}}" bindtap="gotoManagerPage" mode="widthFix" />
+  </view>
+  <view class="main_content">
+    <view class="userinfo_container">
+      <image class="avatar" src="{{avatarUrl || images.people}}" mode="widthFix" bindtap="showAvatarModal"/>
+      <block wx:if="{{ !openId }}">
+        <view class="openId" bind:tap="getOpenId">请点击登录</view>
+      </block>
+      <block wx:else>
+        <view class="user_info_row">
+          <view class="openId">{{ userName }}</view>
+          <image src="{{images.pen}}" class="pen" bind:tap="gotoDetailPage" />
+        </view>
+      </block>
+    </view>
+    <!-- <button open-type="getPhoneNumber" bindgetphonenumber="handleGetPhoneNumber">获取手机号</button> -->
+    <view class="settings_container">
+      <view class="setting_item" bind:tap="gotoMoneyPage">
+        <view class="left">
+          <image class="setting_icon" src="{{images.toDoList}}" />
+          <view class="setting_text">缴费记录</view>
+        </view>
+        <image class="arrow_icon" src="{{images.arrow}}" />
+      </view>
+      <view class="setting_item" bind:tap="gotoClassPage">
+        <view class="left">
+          <image class="setting_icon" src="{{images.toDoList}}" />
+          <view class="setting_text">上课记录</view>
+        </view>
+        <image class="arrow_icon" src="{{images.arrow}}" />
+      </view>
+      <view class="setting_item">
+        <view class="left">
+          <image class="setting_icon" src="{{images.package}}" />
+          <view class="setting_text">剩余课程：</view>
+          <view class="setting_text">{{ restClass }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}" />
+
+  <view wx:if="{{showEditModal}}" class="modal">
+    <view class="modal_content">
+      <input type="text" placeholder="输入新名称" value="{{newName}}" bindinput="onNameInput"/>
+      <button bindtap="updateUserName">更新名称</button>
+      <button bindtap="closeEditModal">取消</button>
+    </view>
+  </view>
+
+  <view wx:if="{{showNotAdminModal}}" class="modal">
+    <view class="modal_content">
+      <text>您不是管理员，无法访问该页面</text>
+      <button bindtap="closeNotAdminModal">确定</button>
+    </view>
+  </view>
+</view>

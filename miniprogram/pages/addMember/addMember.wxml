@@ -1,0 +1,21 @@
+<view class="page_container">
+  <view class="form_container">
+    <view class="form_item">
+      <label>姓名</label>
+      <input type="text" bindinput="onInputChange" data-field="name" />
+    </view>
+    <view class="form_item">
+      <label>识别码</label>
+      <input type="text" bindinput="onInputChange" data-field="idenNum" />
+    </view>
+    <view class="form_item">
+      <label>微信昵称</label>
+      <input type="text" bindinput="onInputChange" data-field="wechatNick" />
+    </view>
+    <view class="form_item">
+      <label>手机号(应当与用户微信绑定手机号相同)</label>
+      <input type="text" bindinput="onInputChange" data-field="phoneNumber" />
+    </view>
+    <button bindtap="onSubmit">提交</button>
+  </view>
+</view>

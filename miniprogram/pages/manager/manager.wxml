@@ -1,0 +1,20 @@
+<view class="page_container">
+  <view class="button_container">
+    <view class="img_button" bindtap="gotoManagerScanPage">
+      <image style="width: 193rpx; height: 191rpx; display: block; box-sizing: border-box" src="{{images.scan}}" class="button_image" />
+      <text class="button_text">上课扫码</text>
+    </view>
+    <view class="img_button" bindtap="gotoCourseManagementPage">
+      <image src="{{images.editStudentClass}}" class="button_image" />
+      <text class="button_text">学生课程管理</text>
+    </view>
+    <view class="img_button" bindtap="gotoMemberListPage">
+      <image src="{{images.VIPList}}" class="button_image" />
+      <text class="button_text">会员名单</text>
+    </view>
+    <view class="img_button" bindtap="gotoContentEditPage">
+      <image src="{{images.editApp}}" class="button_image" />
+      <text class="button_text">客户端内容编辑</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+<!-- <view class="container">
+  <view class="main">
+    <view class="title">编辑公告</view>
+
+    <scroll-view class="notice_list" scroll-y="true">
+      <block wx:for="{{notices}}" wx:key="index">
+        <view class="notice_item">
+          <text class="notice_time">{{item.time}}</text>
+          <input class="notice_content" value="{{item.notice}}" bindinput="onNoticeInputChange" data-id="{{item._id}}" disabled="{{!item.isEditing}}" />
+          <view class="notice_buttons">
+            <button class="edit_button" bindtap="editNotice" data-id="{{item._id}}" wx:if="{{!item.isEditing}}">编辑</button>
+            <button class="save_button" bindtap="saveNotice" data-id="{{item._id}}" wx:if="{{item.isEditing}}">保存</button>
+            <button class="delete_button" bindtap="deleteNotice" data-id="{{item._id}}">删除</button>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+    <button class="add_button" bindtap="gotoAddNotice">新增公告</button>
+  </view>
+</view> -->
+<view class="container">
+  <view class="main">
+    <view class="title">编辑公告</view>
+
+    <scroll-view class="notice_list" scroll-y="true">
+      <block wx:for="{{notices}}" wx:key="index">
+        <view class="notice_item">
+          <text class="notice_time">{{item.time}}</text>
+          <block wx:if="{{!item.isEditing}}">
+            <text class="notice_content">{{item.notice}}</text>
+          </block>
+          <block wx:else>
+            <textarea class="notice_textarea" value="{{item.notice}}" bindinput="onNoticeInputChange" data-id="{{item._id}}" show-confirm-bar="true" placeholder="编辑公告内容">{{item.notice}}</textarea>
+          </block>
+          <view class="notice_buttons">
+            <button class="edit_button" bindtap="editNotice" data-id="{{item._id}}" wx:if="{{!item.isEditing}}">编辑</button>
+            <button class="save_button" bindtap="saveNotice" data-id="{{item._id}}" wx:if="{{item.isEditing}}">保存</button>
+            <button class="delete_button" bindtap="deleteNotice" data-id="{{item._id}}">删除</button>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+    <button class="add_button" bindtap="gotoAddNotice">新增公告</button>
+  </view>
+</view>

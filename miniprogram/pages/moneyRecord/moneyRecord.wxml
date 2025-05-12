@@ -1,0 +1,16 @@
+<!--pages/moneyRecord/moneyRecord.wxml-->
+<!-- moneyRecord.wxml -->
+<view class="container">
+  <view class="table">
+    <view class="table-header">
+      <text>支付金额</text>
+      <text>支付时间</text>
+    </view>
+    <block wx:for="{{records}}" wx:key="index">
+      <view class="table-row">
+        <text>{{item.payment}}元</text>
+        <text>{{item.payTime}}</text>
+      </view>
+    </block>
+  </view>
+</view>

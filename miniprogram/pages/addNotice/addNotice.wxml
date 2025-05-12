@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="main">
+    <view class="title">新增公告</view>
+    <textarea class="input_area" placeholder="输入公告内容" bindinput="onInputChange" value="{{notice}}"></textarea>
+    <button class="submit_button" bindtap="submitNotice">提交</button>
+  </view>
+</view>

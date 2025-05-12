@@ -1,0 +1,71 @@
+.page_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px; /* 给搜索框留出位置 */
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.search_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  z-index: 10; /* 确保搜索框在最上层 */
+}
+
+.search_container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search_container button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px; /* 给列表加上内边距 */
+  padding-top: 80px; /* 确保内容不会被搜索框遮挡 */
+}
+
+.no_results {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.student_item {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.student_info_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  word-wrap: break-word;
+  text-align: right;
+}

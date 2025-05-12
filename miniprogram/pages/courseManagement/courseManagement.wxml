@@ -1,0 +1,68 @@
+<!-- <view class="page_container">
+  <view class="search_container">
+    <input placeholder="搜索学生" bindinput="onSearchInput" value="{{searchQuery}}" />
+    <button bindtap="onSearch">搜索</button>
+  </view>
+  <view class="student_list">
+    <block wx:if="{{noResults}}">
+      <view class="no_results">未搜索到学生</view>
+    </block>
+    <block wx:else>
+      <block wx:for="{{students}}" wx:key="openId">
+        <view class="student_item" bindtap="gotoPersonDetailPage" data-student="{{item}}">
+          <view class="student_info_row">
+            <text class="label">用户ID:</text>
+            <text class="value">{{item.idenNum}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">昵称:</text>
+            <text class="value">{{item.useName}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">手机号:</text>
+            <text class="value">{{item.phoneNumber}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">剩余课程:</text>
+            <text class="value">{{item.restClass}}</text>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view> -->
+
+<view class="page_container">
+  <view class="search_container">
+    <input placeholder="搜索学生" bindinput="onSearchInput" value="{{searchQuery}}" />
+    <button bindtap="onSearch">搜索</button>
+  </view>
+  
+  <view class="student_list">
+    <block wx:if="{{noResults}}">
+      <view class="no_results">未搜索到学生</view>
+    </block>
+    <block wx:else>
+      <block wx:for="{{students}}" wx:key="openId">
+        <view class="student_item" bindtap="gotoPersonDetailPage" data-student="{{item}}">
+          <view class="student_info_row">
+            <text class="label">用户ID:</text>
+            <text class="value">{{item.idenNum}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">昵称:</text>
+            <text class="value">{{item.useName}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">手机号:</text>
+            <text class="value">{{item.phoneNumber}}</text>
+          </view>
+          <view class="student_info_row">
+            <text class="label">剩余课程:</text>
+            <text class="value">{{item.restClass}}</text>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

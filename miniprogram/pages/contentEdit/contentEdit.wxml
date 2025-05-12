@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="main">
+    <view class="title">内容编辑</view>
+    
+    <view class="button_row">
+      <button class="button" bindtap="gotoEditNotice">编辑公告</button>
+    </view>
+    <view class="button_row">
+      <button class="button" bindtap="gotoEditPicture">编辑首页图片</button>
+    </view>
+  </view>
+</view>

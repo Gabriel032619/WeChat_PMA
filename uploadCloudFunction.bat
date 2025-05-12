@@ -1,0 +1,1 @@
+"G:\΢��web�����߹���\cli.bat" cloud functions deploy --e cloud1-6g1prutdc1395d14 --n quickstartFunctions --r --project "" --report_first --report

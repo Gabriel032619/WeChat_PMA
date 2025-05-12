@@ -1,0 +1,25 @@
+/* moneyRecord.wxss */
+.container {
+  padding: 20px;
+}
+
+.table {
+  display: block;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.table-header, .table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+.table-row text {
+  color: #333;
+}

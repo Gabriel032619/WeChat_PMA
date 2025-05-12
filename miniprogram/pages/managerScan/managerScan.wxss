@@ -1,0 +1,43 @@
+/* managerScan.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+
+.label {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.warning-text {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.scan-button {
+  width: 400px;
+  height: 100px;
+  font-size: 32px;
+  position: absolute;
+  bottom: 20px;
+}

@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #ccffcc 40%, transparent 40%);
+  overflow: hidden;  /* 防止子元素溢出显示在圆角外部 */
+}
+
+.qrcode-container {
+  margin-bottom: 20px; /* 减少间距，以便给新的二维码框留出空间 */
+  border: 10px solid rgb(62, 204, 86);
+  background-color: white;
+}
+
+.qrcode {
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.qrcode-canvas {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.outer-border {
+  padding: 10px;
+  background-color: rgb(62, 204, 86);
+  /* background-color: red; */
+}
+
+.inner-border {
+  padding: 10px; /* 白色边框的厚度 */
+  background-color: white;
+}
+
+.no-class {
+  font-size: 24px;
+  color: red;
+  margin-top: 20px; /* 调整间距，以适应新元素 */
+}
+
+.time-container {
+  margin-top: 10%; /* 调整时间容器的顶部间距 */
+}
+
+.time {
+  font-size: 20px;
+  color: #333;
+}

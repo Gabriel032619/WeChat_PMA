@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="image-list">
+    <block wx:for="{{imageList}}" wx:key="fileID">
+      <view class="image-item">
+        <image src="{{item.tempFileURL}}" bindlongpress="deleteImage" data-fileid="{{item.fileID}}" mode="aspectFit" />
+      </view>
+    </block>
+  </view>
+  <button class="upload-button" bindtap="uploadImage">上传图片</button>
+</view>

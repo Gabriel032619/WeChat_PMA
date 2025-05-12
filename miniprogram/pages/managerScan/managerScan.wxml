@@ -1,0 +1,22 @@
+<view class="container">
+  <button class="scan-button" bindtap="startScan">开始扫码</button>
+  <view wx:if="{{studentInfo}}">
+    <image wx:if="{{!warning}}" src="{{images.check}}" class="icon"></image>
+    <image wx:if="{{warning}}" src="{{images.warning}}" class="icon"></image>
+    <view class="info">
+      <text class="label">学生姓名:</text>
+      <text>{{studentInfo.name}}</text>
+    </view>
+    <view class="info">
+      <text class="label">学生编号:</text>
+      <text>{{studentInfo.idenNum}}</text>
+    </view>
+    <view class="info">
+      <text class="label">剩余课程数量:</text>
+      <text>{{studentInfo.restClass}}</text>
+    </view>
+    <view wx:if="{{insufficientCourses}}" class="warning-text">
+      <text>该学员剩余课程不足三节</text>
+    </view>
+  </view>
+</view>

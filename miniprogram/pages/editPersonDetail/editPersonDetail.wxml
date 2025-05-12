@@ -1,0 +1,44 @@
+<!-- <view class="page_container">
+  <view class="student_info">
+    <view class="student_info_row">
+      <text class="label">用户ID:</text>
+      <text class="value">{{student.idenNum}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">昵称:</text>
+      <text class="value">{{student.useName}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">手机号:</text>
+      <text class="value">{{student.phoneNumber}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">剩余课程:</text>
+      <input class="value" value="{{restClass}}" bindinput="onRestClassInput" />
+    </view>
+  </view>
+  <button bindtap="saveChanges">保存更改</button>
+</view> -->
+
+
+<view class="page_container">
+  <view class="student_info">
+    <view class="student_info_row">
+      <text class="label">用户ID:</text>
+      <text class="value">{{student.idenNum}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">昵称:</text>
+      <text class="value">{{student.useName}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">手机号:</text>
+      <text class="value">{{student.phoneNumber}}</text>
+    </view>
+    <view class="student_info_row">
+      <text class="label">剩余课程:</text>
+      <input class="value" value="{{restClass}}" bindinput="onRestClassInput" />
+    </view>
+  </view>
+  <button bindtap="confirmSaveChanges">保存更改</button>
+</view>

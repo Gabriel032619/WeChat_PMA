@@ -1,0 +1,17 @@
+<!--pages/personDetail/personDetail.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text class="label">昵称：</text>
+    <input class="input" value="{{userName}}" placeholder="请输入昵称" bindinput="onNameInput"/>
+  </view>
+  <view class="userinfo">
+    <text class="label">手机号：</text>
+    <input class="input" value="{{userPhoneNumber}}" placeholder="请输入手机号" bindinput="onPhoneNumberInput"/>
+  </view>
+  <view class="userinfo">
+    <text class="label">邮箱：</text>
+    <input class="input" value="{{userEmail}}" placeholder="请输入邮箱" bindinput="onEmailInput"/>
+  </view>
+  <view  class="userinfo">活动和通知可能通过手机号或邮箱通知，建议填写</view>
+  <button class="button" bindtap="updateUserInfo">保存</button>
+</view>

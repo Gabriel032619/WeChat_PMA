@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="main">
+    <view class="title font_title_1" style="text-align: center;">心 茶 会</view>
+    
+    <swiper class="sub_title" autoplay="true" interval="3000" duration="500" indicator-dots="true">
+      <block wx:for="{{showImg}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="announcement">
+      <block wx:for="{{notices}}" wx:key="index">
+        <view class="notice_item">
+          <text class="notice_time">{{item.time}}</text>
+          <text class="notice_content">{{item.notice}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="button_row">
+      <view class="button" bindtap="">
+        <image src="{{images.joinVIP}}"/>
+        <text class="button_text">加入会员</text>
+      </view>
+      <view class="button" bindtap="showPopup">
+        <image src="{{images.calculate}}"/>
+        <text class="button_text">升级进度</text>
+      </view>
+    </view>
+
+    <view class="button_row">
+      <view class="button" bindtap="showCustomerServicePopup">
+        <image src="{{images.server}}"/>
+        <text class="button_text">联系客服</text>
+      </view>
+      <view class="button" bindtap="gotoClassPage">
+        <image src="{{images.report}}"/>
+        <text class="button_text">上课记录</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="modal" wx:if="{{showCustomerServicePopup}}">
+  <view class="modal-content">
+    <text>如果您需要帮助，请联系我们的在线客服。客服联系方式：1243005641，微信qq皆可
+客服工作时间：工作日10：00-17：00</text>
+    <button bindtap="hideCustomerServicePopup">关闭</button>
+  </view>
+</view>

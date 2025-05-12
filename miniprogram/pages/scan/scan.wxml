@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="result">
+    <image wx:if="{{showSuccess}}" src="{{images.check}}" class="icon"/>
+    <image wx:if="{{showWarning}}" src="{{images.warning}}" class="icon"/>
+    <text class="message">{{message}}</text>
+  </view>
+</view>

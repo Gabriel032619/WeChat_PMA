@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+}
+
+.table {
+  display: block;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.table-header, .table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.scroll-container {
+  max-height: 600px; /* 根据需要调整最大高度 */
+  overflow: auto;
+}
+
+.table-row text {
+  color: #333;
+  font-size: large;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #999;
+  font-size: 16px;
+}
