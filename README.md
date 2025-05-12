@@ -1,12 +1,20 @@
-# 云开发 quickstart
+# Introduction
+This project uses WeChat applet development tools to complete a personnel management applet developed in conjunction with WeChat Cloud.
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+For privacy reasons, we deleted the cloud function folder.
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+This project implements the hierarchical permissions for ordinary users and managers. Administrators can edit the main interface announcements, pictures, and course information of the current person. At the same time, you can scan the code to record class information. In addition, it supports user-defined nicknames and avatars.
 
-## 参考文档
+## Page Desmonstration
+
+<img src="https://github.com/user-attachments/assets/92c65eb9-629f-4564-8426-61ad6dfd24ef" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/d5e679f8-be8c-4e22-ab54-b14cfa947594" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/76f2dfe5-b84b-4786-8cd1-623f9feabc0d" width="300"/>
+
+
+## Reference Documentation
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
