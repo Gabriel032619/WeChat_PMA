@@ -7,11 +7,11 @@ This project implements the hierarchical permissions for ordinary users and mana
 
 ## Page Desmonstration
 
-<img src="https://github.com/user-attachments/assets/a4fd35cc-7235-4b97-862a-9e6a9612c256" width="300"/>
+<img src="https://github.com/user-attachments/assets/a4fd35cc-7235-4b97-862a-9e6a9612c256" width="150"/>
 
-<img src="https://github.com/user-attachments/assets/d5e679f8-be8c-4e22-ab54-b14cfa947594" width="300"/>
+<img src="https://github.com/user-attachments/assets/d5e679f8-be8c-4e22-ab54-b14cfa947594" width="150"/>
 
-<img src="https://github.com/user-attachments/assets/76f2dfe5-b84b-4786-8cd1-623f9feabc0d" width="300"/>
+<img src="https://github.com/user-attachments/assets/76f2dfe5-b84b-4786-8cd1-623f9feabc0d" width="150"/>
 
 
 ## Reference Documentation
