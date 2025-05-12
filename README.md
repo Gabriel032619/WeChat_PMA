@@ -18,7 +18,7 @@ This project implements the hierarchical permissions for ordinary users and mana
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
-- ## License
+## License
 
 This project is licensed under a **custom non-commercial license**.
 
