@@ -7,7 +7,7 @@ This project implements the hierarchical permissions for ordinary users and mana
 
 ## Page Desmonstration
 
-<img src="https://github.com/user-attachments/assets/92c65eb9-629f-4564-8426-61ad6dfd24ef" width="300"/>
+<img src="https://github.com/user-attachments/assets/a4fd35cc-7235-4b97-862a-9e6a9612c256" width="300"/>
 
 <img src="https://github.com/user-attachments/assets/d5e679f8-be8c-4e22-ab54-b14cfa947594" width="300"/>
 
